@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+html,body,div,ul,li,p,input,a,button,h2,fieldset,h3,aside,section{
+    margin:0;padding:0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+section,article,header,footer,nav{
+    display: block;
+}
+ul,li{list-style:none;}
+input,button{outline:none;}
+a{color:#333;text-decoration: none;cursor: pointer;}
+body{
+    font-size: 14px;
+}
+/*清除浮动*/
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{clear:both;}
+
+.fl{float:left;}
+.fr{float: right;}
+
+/*设置滚动条*/
+::-webkit-scrollbar{width:.1rem;}
+::-webkit-scrollbar-thumb {
+    width: 0px;
+    min-height: 0px;
+    background-color: #c0c0c0;
+    border-radius: 7px;
+}
